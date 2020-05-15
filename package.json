@@ -1,0 +1,42 @@
+{
+  "name": "disertatie",
+  "version": "1",
+  "main": "app.js",
+  "author": "ionut",
+  "license": "MIT",
+  "scripts": {
+    "nodemonstart": "nodemon app.js",
+    "format": "prettier --write '**/*.{ts,js,css,html}'",
+    "server": "node app.js",
+    "clientAndroid": "cd ./client && yarn iosAndroid",
+    "clientIos": "cd ./client && yarn iosStart",
+    "dev": "concurrently \"yarn nodemonstart\" \"yarn clientIos\""
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "@mauron85/react-native-background-geolocation": "^0.6.3",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cli": "^1.0.1",
+    "components": "^0.1.0",
+    "concurrently": "^5.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "g": "^2.0.1",
+    "lodash": "^4.17.15",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.7",
+    "sequelize-automate": "^1.2.0",
+    "sqlite3": "^4.2.0",
+    "watchman": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5"
+  }
+}
